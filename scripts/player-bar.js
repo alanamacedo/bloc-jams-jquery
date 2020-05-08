@@ -39,13 +39,9 @@
     $('#time-control input').val(percent);
   }, 1000);
 
-  $('volume-control input').on('input', function (event) {
-    player.skipTo(event.target.value);
+  $('#volume-control input').on('input', function (event) {
+    player.setVolume(event.target.value);
   });
 
-  setVolume( () => {
-    if (player.playState !== 'playing') { return; }
-    const range = player.getVolume();
-  })
 
 }
