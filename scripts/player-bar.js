@@ -26,7 +26,7 @@
     helper.playPauseAndUpdate(previousSong);
   });
 
-  $('time-control input').on('input', function (event) {
+  $('#time-control input').on('input', function (event) {
     player.skipTo(event.target.value);
   });
 
@@ -44,4 +44,4 @@
   });
 
 
-} // complete
+} // fixed skipTo function
